@@ -31,3 +31,78 @@ $$
 - [ ] 明确重夸克辐射、电磁流插入与轻夸克辐射的分解方式。
 - [ ] 确定 NNLP 非微扰矩阵元是否可用已有参数表达，还是需要新的独立函数。
 - [ ] 检查能量依赖、尺度演化、强子输入及不确定性传播。
+
+
+---
+
+## 4. 2026-10-14：电磁流 Wick 收缩后的四类 NNLP 软矩阵元
+
+采用
+$T^{\mu\nu}(p)=i\int d^4x\,e^{ipx}
+\langle0|T\{j_{\rm em}^\nu(x),J^\mu(0)\}|B^-\rangle$。
+对轻夸克电磁流 $j_{{\rm em},u}^\nu=Q_u\bar u\gamma^\nu u$，
+将 $u(x)$ 与弱流中 $\bar u(0)$ 做 Wick 收缩，产生固定背景场传播子
+$S_u(x,0;A)=\langle T u(x)\bar u(0)\rangle_A$。以下仅列留下的软场结构；
+整体相位、费米符号及不相连部分仍须按统一的 Fourier/外态约定核对。
+
+| 来源 | Wick 收缩后的剩余强子结构 |
+|---|---|
+| $J_2$ | $\bar u(x)\gamma^\nu S_u(x,0;A)\Gamma^\mu VKh_v(0)$ |
+| $J_1\mathcal L_1$ | $\bar u(x)\gamma^\nu S_u(x,0;A)\Gamma^\mu Kh_v(0)$，并插入 $O_K(y)$ |
+| $J_0\mathcal L_2$ | $\bar u(x)\gamma^\nu S_u(x,0;A)\Gamma^\mu h_v(0)$，并插入 $O_T(y)$ |
+| $J_0(\mathcal L_1)^2$ | 最低阶弱流结构，并插入 $O_K(y)O_K(z)$ |
+
+这些非局域算符需要相应 Wilson 线、剩余时间排序及非微扰矩阵元定义，不能仅由领先 $\phi_+(\omega)$ 代替。
+
+## 5. 自由轻夸克传播子与 NNLP 的三种联合组合
+
+在 $p^2=0$、$d=2p\cdot\ell$ 时，
+
+$$
+S_u(p-\ell)=\frac{i(\not p-\not\ell)}{-d+\ell^2+i0}.
+$$
+
+沿 $|\ell^2/d|\ll1$ 区域展开：
+
+$$
+S_0=-\frac{i\not p}{d},\quad
+S_1=\frac{i\not\ell}{d}-\frac{i\not p\,\ell^2}{d^2},\quad
+S_2=\frac{i\not\ell\,\ell^2}{d^2}
+-\frac{i\not p\,(\ell^2)^2}{d^3}.
+$$
+
+以 $\Phi_r$ 表示含第 $r$ 阶 HQET 插入的软矩阵元，
+**自由传播子部分**在二阶要求全部三组：
+
+$$
+\boxed{\quad
+T_{u,\mathrm{free}}^{\mu\nu}\big|_{\lambda^2}
+\ \propto\
+\int d^4\ell\,\mathrm{Tr}
+\left[\gamma^\nu\left(
+S_0\Gamma^\mu\frac{\Phi_2}{M^2}
++S_1\Gamma^\mu\frac{\Phi_1}{M}
++S_2\Gamma^\mu\Phi_0
+\right)\right].\quad}
+$$
+
+比例号表明整体 $i$、归一化、Fourier 测度和 Ward 接触项尚待统一。
+这里的 $\Phi_1,\Phi_2$ 是时间有序的非局域软矩阵元，不是已知数值输入。
+含背景软胶子的传播子展开还需规范不变的三粒子或更高多粒子 LCDA；
+将 $\ell^2$ 转成协变导数时需考虑 EOM 和端点重叠。
+
+## 6. 硬光子、Ward 检验与形状因子状态
+
+重夸克硬光子发射的树级 QCD 核及候选 NNLP 动量展开见
+docs/QCD_HQET_matching.md 第 8 节。**[待核验]**
+电磁流 Ward 恒等式中的接触项必须和轻、重夸克及轻子辐射一起核对。
+不能将自由传播子三组直接称为完整物理 $F_V^{\rm NNLP},F_A^{\rm NNLP}$。
+
+若 $F=F^{(0)}+F^{(1)}+F^{(2)}+\cdots$，相对二阶的模平方包括
+
+$$
+\left.|F|^2\right|_{\mathrm{NNLP}}
+=2\mathrm{Re}[F^{(0)*}F^{(2)}]+|F^{(1)}|^2.
+$$
+
+这是纯代数关系，不代表本项目已求出形状因子或分支比。

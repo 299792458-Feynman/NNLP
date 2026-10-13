@@ -56,3 +56,59 @@ $$
 - 完整衰变 NNLP 与单纯重夸克 $1/m_b^2$ 子问题的关系是什么？
 
 **下一步：** 固定明确的二阶独立算符基，再到 `QCD_HQET_matching.md` 做外态匹配。
+
+
+---
+
+## 5. 2026-10-14 补充：统一的树级未约化算符定义
+
+**状态：[树级形式代数已核对；未构造完整独立重整化算符基]。**
+固定度规 $g^{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$、$D_\mu=\partial_\mu-ig_sA_\mu^aT^a$，
+$P_\pm=(1\pm\not v)/2$，并记
+
+$$
+M=2m_b,\quad V=iv\cdot D,\quad K=i\not D_\perp,\quad
+\Gamma^\mu=\gamma^\mu(1-\gamma_5).
+$$
+
+重夸克大/小分量的树级消元与局域有序展开为
+
+$$
+H_v=(M+V)^{-1}Kh_v,\qquad
+b=e^{-im_bv\cdot x}[1+M^{-1}K-M^{-2}VK+O(M^{-3})]h_v.
+$$
+
+这给出 **未额外进行高阶场重定义** 的弱流
+
+$$
+J^\mu=J_0^\mu+M^{-1}J_1^\mu-M^{-2}J_2^\mu+O(M^{-3}),
+$$
+
+$$
+J_0^\mu=\bar u\Gamma^\mu h_v,\quad
+J_1^\mu=\bar u\Gamma^\mu Kh_v,\quad
+J_2^\mu=\bar u\Gamma^\mu VKh_v.
+$$
+
+同一场定义中的拉氏量为
+
+$$
+\mathcal L_{\rm HQET}
+=\bar h_vVh_v+M^{-1}O_K-M^{-2}O_T+O(M^{-3}),
+$$
+
+$$
+O_K=\bar h_vK^2h_v
+=O_{\rm kin}+O_{\rm mag},\qquad
+O_T=\bar h_vKVKh_v,
+$$
+
+$$
+O_{\rm kin}=\bar h_v(iD_\perp)^2h_v,\qquad
+O_{\rm mag}=\frac{g_s}{2}\bar h_v\sigma_{\alpha\beta}G^{\alpha\beta}h_v.
+$$
+
+**导数次序不得交换**：$VK=KV+[V,K]$，在本约定下
+$[V,K]=ig_s\gamma_\perp^\rho v^\alpha G_{\alpha\rho}$。
+利用最低阶 EOM 改写时必须同时追踪场重定义、时间有序乘积及接触项。
+Darwin/spin-orbit 基是另一种约化表示，不可与原始 $O_T$ 重复相加。

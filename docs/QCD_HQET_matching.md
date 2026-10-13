@@ -38,3 +38,87 @@ $$
 - 未定稿算符基，故不在这里列出通用数值系数。
 - 过去对话曾探讨特定归一化下的候选系数；在未附上其完整算符定义和背景场检验前，一律保持 **[待核验]**。
 - Neubert 1994 讨论的是重轻流在 $1/m_Q$ 阶的短距离展开，不能直接当成 $1/m_Q^2$ 全部结果的依据。
+
+
+---
+
+## 6. 2026-10-14：树级自由外态检验 [部分已核对]
+
+采用 $M=2m_b$、$p_b=m_bv+k$、$k_\perp=k-v(v\cdot k)$。
+QCD 重夸克传播子投影给出
+
+$$
+P_+S_{\rm QCD}(m_bv+k)P_+
+=\frac{iP_+}{v\cdot k+k_\perp^2/(M+v\cdot k)+i0}.
+$$
+
+按 $M^{-1}$ 展开，其逆传播核为
+
+$$
+v\cdot k+\frac{k_\perp^2}{M}
+-\frac{(v\cdot k)k_\perp^2}{M^2}+O(M^{-3}),
+$$
+
+与未重定义 HQET 的 $\bar h_v[V+M^{-1}K^2-M^{-2}KVK]h_v$ 的自由核一致。
+自由在壳重夸克旋量满足
+
+$$
+u_-=\frac{\not k_\perp}{M+v\cdot k}u_+.
+$$
+
+这核对了树级场重构的 Dirac 结构，但在壳自由外态**不足以独立确定 EOM 冗余或含场强的系数**。
+
+## 7. 单个背景胶子顶点 [候选解析式；完整匹配待复核]
+
+令背景胶子流入重夸克线，$k'=k+q$，并定义
+$d=M+v\cdot k$、$d'=M+v\cdot k'$。在 $D=\partial-ig_sA$ 约定下，对小分量精确树级表达式做一次背景场变分，得到不含总体 Feynman 相位的候选顶点
+
+$$
+\mathcal R_g^{a\rho}
+=g_sT^a\left[
+\frac{\gamma_\perp^\rho}{d'}
+-\frac{v^\rho\not k_\perp}{d'd}\right],
+$$
+
+$$
+\mathcal V_g^{a\rho}
+=g_sT^a\left[
+v^\rho+\frac{\not k'_\perp\gamma_\perp^\rho}{d'}
++\frac{\gamma_\perp^\rho\not k_\perp}{d}
+-\frac{\not k'_\perp v^\rho\not k_\perp}{d'd}
+\right].
+$$
+
+$\mathcal R_g$ 来自弱流重构；$\mathcal V_g$ 来自 HQET 作用量。按 $M^{-1}$ 和 $M^{-2}$ 展开分别生成 $J_1,J_2$ 接触顶点与 $\mathcal L_1,\mathcal L_2$ 顶点。**[待核验]** 须再次检查外态归一化、离壳 Ward 恒等式、相位、双胶子接触顶点及 EOM/场重定义的一致性，不能声称已完成通用 NNLP 重轻流匹配。
+
+## 8. 硬光子从重夸克线发射 [QCD 核已写出；协变 NNLP 匹配待核验]
+
+令 $p^2=0$、$E=v\cdot p\sim m_b$，QCD 树级核为
+
+$$
+\mathcal K_b^{\mu\nu}
+=Q_b\Gamma^\mu\frac{\not p_b-\not p+m_b}{(p_b-p)^2-m_b^2+i0}\gamma^\nu.
+$$
+
+在 $k=0$、$p\cdot\epsilon=v\cdot\epsilon=0$ 以及 $P_+$ 外态下，
+领先非零核为
+
+$$
+\mathcal K_b^{[0]\mu}
+=\frac{Q_b}{ME}\Gamma^\mu\not p\not\epsilon^*P_+.
+$$
+
+此前讨论给出的相对一阶软动量候选核为
+
+$$
+\begin{aligned}
+\mathcal K_b^{[1]\mu}=\frac{Q_b}{ME}\Gamma^\mu\Big[
+&(v\cdot k)\not\epsilon^*-2(\epsilon^*\cdot k_\perp)
++\frac{\not p}{M}\not\epsilon^*\not k_\perp\\
+&+\not p\not\epsilon^*\left(\frac{v\cdot k}{E}
+-\frac{2p\cdot k}{ME}\right)
+\Big]P_+.
+\end{aligned}
+$$
+
+**[待核验]** 上式仅作为此前对话的自由外态推导记录；还未完成独立 Dirac 检验、软背景场的协变匹配、接触项和 RPI 检查。不能将它视为最终 NNLP Wilson 系数。硬光子携带 $O(m_b)$ 动量，不能以软 HQET 胶子顶点简单替代这一步。
