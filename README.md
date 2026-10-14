@@ -18,6 +18,7 @@
 | [`docs/power_corrections.md`](docs/power_corrections.md) | NNLP 算符和时间有序插入清单 |
 | [`docs/form_factors.md`](docs/form_factors.md) | $F_V,F_A$ 的定义及提取 |
 | [`docs/branching_ratio.md`](docs/branching_ratio.md) | 相空间积分、输入参数与分支比 |
+| [`docs/tree_level_NNLP_workflow_2026-10-14.md`](docs/tree_level_NNLP_workflow_2026-10-14.md) | **树级 NNLP 物理主线**：QCD 图 → HQET 固定基底树级核 → 真实光子幂次展开 → LCDAs → $F_V/F_A$ → NNLP 分支比；并讨论为何 26+26 母基独立化不是前置步骤 |
 | [`progress/CURRENT_STATUS.md`](progress/CURRENT_STATUS.md) | 当前进度、阻塞点及下一步 |
 | [`progress/research_log.md`](progress/research_log.md) | 按日期记录讨论和验证 |
 | [`references/bibliography.md`](references/bibliography.md) | 文献及待核查信息 |
@@ -35,7 +36,7 @@
 
 ## 下一步
 
-先固定功率计数与算符基，再复核到 $1/m_b^2$ 的重夸克场展开、电流与作用量插入；对可能被低阶 EOM 消去的算符逐一检查，完成带背景胶子振幅的树级匹配，最后转向衰变矩阵元与数值输入。
+**2026-10-14 主线修订：** 目标是树级 $B^-\to\gamma\ell^-\bar\nu$ 的物理 NNLP 振幅与分支比。先固定统一功率计数、场基底和电磁 Ward 约定，直接从不带背景胶子的轻旁观反夸克/重 $b$ 辐射 QCD 树图核入手，按相同外态与 HQET 树图逐项比较，再加入背景软胶子、接触项及真实光子硬核的相对 NNLP 幂次展开。之后构造非微扰矩阵元，计算 $F_V,F_A$ 和衰变率。完整 26+26 母基的独立化与通用系数仍保留为单独专题，**不是当前树级物理振幅的必经起点**；这一策略不代表物理 NNLP 完备性已证明。
 
 ---
 
