@@ -145,3 +145,21 @@ $$T^{\mu\nu}(p)=i\int d^4x\,e^{ip\cdot x}\langle0|T\{j_{\rm em}^\nu(x),J^\mu(0)\
 **具体下一步：** (1) 设定 `m_u=0`，把 26 维数-5 流和 26 个 T 产品连同 EOM/箭头恒等式输入符号线性代数，求极小维数及变换矩阵；(2) 用零/一/二背景胶子外态复核软 HQET Wilson 系数；(3) 建立硬光子 QCD→SCET 匹配基并逐项核对 `p_\nu T^{\mu\nu}` Ward 恒等式；(4) 按独立多粒子 LCDAs 分类所有 NNLP 核和端点区域；(5) 完成 `F_V,F_A` 后再计算分支比。
 
 **归档状态：** 本文件随经审核的研究同步进入仓库；文献母基已归档不代表物理 NNLP 完备性、极小化或匹配系数已完成。
+
+---
+
+## I. 2026-10-14 新增：匹配系数与 EOM 映射的严格边界
+
+由本轮树级有序展开得原始场的 $J_1^\mu=\bar u\Gamma^\mu Kh_v$、$J_b^\mu=\bar u\Gamma^\mu VKh_v$。在本文 $\bar u_L$、$R_\mu$ 的原有定义下，保留 EOM 比例项的有序表达式为
+
+$$
+\boxed{J_1^\mu=2(\mathcal J_2^{(1)\mu}+\mathcal J_8^{(1)\mu})-2\bar u_L\gamma^\mu Vh_v},
+$$
+
+$$
+\boxed{J_b^\mu=2(\mathcal Q_{11}^\mu+i\mathcal Q_{23}^\mu)-2\bar u_L\gamma^\mu V^2h_v}.
+$$
+
+因此前文 F 节用 $\doteq$ 表示的简化只在指定的**最低阶 EOM 商空间**内成立；不能直接用它抛弃 $J_1/M$ 的 EOM 项，因为由 $Vh_v=-K^2h_v/M+O(M^{-2})$ 会在 NNLP 产生局域补偿；在 $T$-积内还有待检验的 EOM 接触项。
+
+规范化场基底新增 $\bar u\Gamma^\mu K^2h_v^c$ 的 $+1/2$ 系数，同时要把二阶拉氏量转为 $-[K,[V,K]]/2M^2$。**尚未获得**将两套表示完整投影到本页 26+26 母基（再在 $m_u=0$ 求独立秩）所需的全部约化矩阵，不能据此填写剩余母基的“零系数”。详见 [`NNLP_tree_matching_2026-10-14.md`](NNLP_tree_matching_2026-10-14.md) 第 9 节。

@@ -106,3 +106,11 @@ $$
 $$
 
 这是纯代数关系，不代表本项目已求出形状因子或分支比。
+
+---
+
+## 7. 2026-10-14：为什么树级系数仍不足以得到 $F_V,F_A$
+
+QCD/HQET 匹配时的 $\langle u|J|b\rangle$ 使用微扰外态，而衰变需要 $\langle\gamma|J|B\rangle$。后者在高能光子 LP 已包含 $B$ 介子 LCDA 的逆矩 $\lambda_B^{-1}=\int_0^\infty d\omega\,\phi_+(\omega)/\omega$，不能由树级 Wilson 系数求出。作为**约定性 LP 示例**，树级常见形式 $F_{V,A}^{\rm LP}\sim Q_um_B\widetilde f_B/(2E_\gamma\lambda_B)$；轴矢接触项和辐射定义须另行统一。
+
+此外，轻夸克发射硬光子时 $S_u(k-q)=i(\not k-\not q)/[-2q\cdot k+k^2+i0]$，即使重夸克 HQET 场不做更高阶展开，其分母的 $[k^2/(2q\cdot k)]^2$ 项也在相对 NNLP 量级。真实光子的过程匹配、软背景胶子、多粒子 LCDAs、硬核与规范 Ward 检查均不能由本轮重轻弱流系数表直接替代。推理及幂次组合详见 [`from_matching_to_branching_ratio_2026-10-14.md`](from_matching_to_branching_ratio_2026-10-14.md)。

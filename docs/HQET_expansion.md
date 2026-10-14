@@ -118,3 +118,25 @@ Darwin/spin-orbit 基是另一种约化表示，不可与原始 $O_T$ 重复相�
 ## 6. 二阶流与系统母基的衔接（2026-10-14）
 
 **[文献输入/形式代数；过程专门化待核验]** 此处 $J_0,J_1,J_2$ 是未重定义 HQET 场的树级展开结果，而不是通用局域流 Wilson 系数全表。更一般的二阶重轻流系统母基包含 26 个维数 5 局域算符，以及必要的非局域时间有序乘积，详见 [`HQET_heavy_light_operator_basis.md`](HQET_heavy_light_operator_basis.md)。改变重夸克场定义和进行 EOM 约化时，需同时变换流、拉氏量及 $T$-积接触项。
+
+---
+
+## 7. 2026-10-14：规范化场重定义及有序二阶流 [新增]
+
+**范围：[树级形式代数已核对；不等于全部独立 Wilson 系数已求出]。** 记 $M=2m_b$、$V=iv\cdot D$、$K=i\not D_\perp$。在前述原始场作用量 $\bar h_v[V+K^2/M-KVK/M^2]h_v$ 中，作
+
+$$
+h_v=\left(1+\frac{K^2}{2M^2}\right)h_v^c+O(M^{-3}),
+$$
+
+并对共轭场施加相应变换及分部积分，可得
+
+$$
+\boxed{\mathcal L_c=\bar h_v^c\left[V+\frac{K^2}{M}-\frac{[K,[V,K]]}{2M^2}\right]h_v^c+O(M^{-3})},
+$$
+
+$$
+\boxed{J_c^\mu=e^{-im_bv\cdot x}\bar u\Gamma^\mu\left[1+\frac{K}{M}+\frac{K^2/2-VK}{M^2}\right]h_v^c+O(M^{-3})}.
+$$
+
+故规范化场局域流 $\bar u\Gamma^\mu K^2h_v^c$ 与 $\bar u\Gamma^\mu VKh_v^c$ 的树级系数分别为 $+1/2$ 和 $-1$（二阶共同外提 $1/M^2$）。不同场基底的作用量插入必须同步变换，不能把这个 $+1/2$ 额外加到原始场 H1–H7 贡献中。完整消元、场变换及对照见 [`NNLP_tree_matching_2026-10-14.md`](NNLP_tree_matching_2026-10-14.md)。

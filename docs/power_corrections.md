@@ -82,3 +82,20 @@ $$
 **[文献输入/形式代数；极小化待计算]** Balzereit–Ohl §2.1 提供 26 个维数 5 局域重轻流和 $6+4+16=26$ 个非局域 $T$-积，共 52 个 HQET 二阶重轻流系统母基元素。原有 H1–H7 是在 $M=2m_b$、未重定义 HQET 场下的树级 Dyson 组合，**既不是需额外叠加的七个独立算符，也不是 52 个系数的完整匹配**。
 
 算符定义、左/右作用导数及混合插入对称因子详见 [`HQET_heavy_light_operator_basis.md`](HQET_heavy_light_operator_basis.md)。$m_u=0$ 下的极小独立基和完整 $B\to\gamma\ell\nu$ 的 NNLP 过程基均 **[待计算]**。
+
+---
+
+## 8. 2026-10-14：规范化场基底的二阶 Dyson 组合
+
+原有 H1–H7 采用未重定义场。本节**改用另一基底，不与 H1–H7 相加**：$h_v=(1+K^2/2M^2)h_v^c$，定义 $O_1=\bar h_v^cK^2h_v^c$、$O_2=\bar h_v^c[K,[V,K]]h_v^c$；$J_a=\bar u\Gamma^\mu K^2h_v^c$、$J_b=\bar u\Gamma^\mu VKh_v^c$、$J_{0,1}$ 亦改用 $h_v^c$。
+
+$$
+\boxed{
+\mathbb J_c^{(2)\mu}
+=\frac12J_a^\mu-J_b^\mu
++\mathcal T_1[J_1^\mu,O_1]
+-\frac12\mathcal T_1[J_0^\mu,O_2]
++\mathcal T_2[J_0^\mu,O_1,O_1] .}
+$$
+
+这里已外提共同的 $1/M^2$，$\mathcal T_1=i\int T$、$\mathcal T_2=i^2/2!\iint T$ 保持第 5 节的规范。**系数**依次为 $+1/2,-1,+1,-1/2,+1$；后面三个是树级作用量展开的 Dyson 组合因子，不是每个独立非局域母基的通用硬系数。推导、场重定义和背景场检查见 [`NNLP_tree_matching_2026-10-14.md`](NNLP_tree_matching_2026-10-14.md)。

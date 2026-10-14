@@ -43,3 +43,24 @@ $$
 - [ ] 明确“NNLP”覆盖哪些功率项，避免遗漏同阶贡献。
 - [ ] 实现差分衰变率并用已知极限或参考结果核验。
 - [ ] 再进行数值积分和误差预算，记录参数版本与引用来源。
+
+---
+
+## 5. 2026-10-14：微扰匹配、RG 与 NNLP 衰变率的区别
+
+树级重轻弱流系数是 $\alpha_s^0$ 的短距离信息，并非 $F_V,F_A$ 的非微扰输入。RG 需要反常维数及算符混合，不能仅由树级系数确定 $\lambda_B$ 等输入。$\Lambda_{\rm QCD}/m_b$ 的幂次展开和 $\alpha_s$ 微扰展开应独立计数；NNLP 不等于 NNLL。
+
+设 $F_i=F_i^{(0)}+F_i^{(1)}+F_i^{(2)}+\cdots$（此处上标为**相对幂次**），则衰变率中相对 NNLP 的模平方结构为
+
+$$
+\boxed{\bigl.|F_i|^2\bigr|_{\rm NNLP}=2\operatorname{Re}[F_i^{(0)*}F_i^{(2)}]+|F_i^{(1)}|^2,\quad i=V,A.}
+$$
+
+如果再重夸克展开相空间/运动学因子，还需计入它们的二阶系数。质量可忽略的轻子及某种统一的轴矢/内辐射约定下，常见结构依赖光子谱为
+
+$$
+\frac{d\Gamma}{dE_\gamma}=\frac{\alpha_{\rm em}G_F^2|V_{ub}|^2}{6\pi^2}
+ m_BE_\gamma^3(1-2E_\gamma/m_B)(|F_V|^2+|F_A|^2).
+$$
+
+需先核对具体规范和 $E_{\rm cut}$，不把此示意关系当作已算出 NNLP 谱。完整讨论见 [`from_matching_to_branching_ratio_2026-10-14.md`](from_matching_to_branching_ratio_2026-10-14.md)。
