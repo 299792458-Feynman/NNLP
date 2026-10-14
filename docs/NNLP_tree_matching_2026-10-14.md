@@ -291,3 +291,14 @@ $$
 5. 再进入带真实光子外态的过程级 (H)SCET/QED 匹配和 $F_V,F_A$ 的 NNLP 投影。
 
 **既有研究资料：** `docs/HQET_expansion.md`、`docs/QCD_HQET_matching.md`、`docs/HQET_heavy_light_operator_basis.md`、`docs/power_corrections.md`。本笔记是 2026-10-14 本轮对话中**新增的详细推导**，与原始历史记录并存。
+
+
+---
+
+## 12. 2026-10-14 — 无背景胶子 QCD/HQET 树级匹配核对 [新增]
+
+对于明确限定为**树图阶**的 NNLP 物理目标，我们在原始场定义 $M=2m_b$ 下分别计算 QCD 截肢自由夸克振幅和 QCD 投影重夸克传播 Green 函数，并与 HQET $J_0+J_1/M-J_2/M^2$ 以及 $\mathcal L_0+O_K/M-O_T/M^2$ 的单/双时间有序插入逐项比较。完整推导与所有图的动量核载于 [无胶子逐项匹配新文档](zero_gluon_QCD_HQET_tree_matching_2026-10-14.md)。
+
+在固定非零 $\omega=v\cdot k$ 的离壳比较中，QCD 与 HQET 的 LP、NLP、NNLP 核逐项相同；NNLP 四项依次为 $-K_0,-K_0z/\omega^2,+z/\omega,+z^2/\omega^3$，其中 $K_0=\slashed k_\perp,z=k_\perp^2$。
+
+**重要限制：** 在壳重夸克满足 $\omega=-z/M+O(M^{-3})$，单个无胶子在壳振幅不能独立测定带 $VK$ 的二阶流系数；其 $-1$ 是所选**原始场**的树级消元系数。零胶子检验无法确定普适 26+26 母基 Wilson 系数，也没有计算任何真实硬光子图。

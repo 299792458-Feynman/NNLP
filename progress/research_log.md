@@ -71,3 +71,15 @@
 - **计算结果：** 本条是对研究优先级的核验和流程整理，**没有新增已经逐图匹配完成的振幅，没有算出 $F_{V,A}^{(2)}$ 或数值分支比**。重夸克场展开、四类时间有序结构和自由传播子二阶代数仍按既有文档的核验等级记录。
 - **后续任务及优先级：** ① 固定统一图与外态约定；② **先算不带背景胶子的两类 QCD 光子发射图和 HQET 对照**；③ 加一个/两个软背景胶子及 EOM/RPI/Ward 检验；④ 真实光子全部 NNLP 硬核与非微扰投影；⑤ 形状因子与分支比。26+26 极小秩作为独立算符专题保留，不再阻塞物理树图主线。
 - **详细档案：** [`docs/tree_level_NNLP_workflow_2026-10-14.md`](../docs/tree_level_NNLP_workflow_2026-10-14.md)，含完整物理动机、路径积分论证、公式、各步输入/输出、状态和验收表。
+
+
+---
+
+## 2026-10-14 — 无胶子 QCD/HQET NNLP 树级匹配：逐图解析和系数
+
+- **目标：** 只针对 $B\to\gamma\ell\nu$ NNLP 树级重夸克子系统，明确回答“QCD 振幅是什么、HQET 振幅是什么、它们怎样匹配、所有实际涉及的树图算符有哪些、系数是什么”。
+- **QCD 起点：** $\mathcal M_{\rm QCD}^\mu=\bar u_u(p')\Gamma^\mu u_b(m_bv+k)$；大/小旋量满足 $u_-=(M+\omega)^{-1}\slashed k_\perp u_+$。另构造轻夸克线截肢、重夸克源 $P_+$ 的离壳 QCD 自由 Green 核 $\bar u_u\Gamma^\mu(M+\omega+K_0)/(M\omega+\omega^2+z)P_+$。
+- **HQET 算符：** 在原始未重定义场 $h_v$ 下，$J_0,J_1=\bar u\Gamma Kh_v,J_2=\bar u\Gamma VKh_v$ 与 $O_K=\bar h_vK^2h_v,O_T=\bar h_vKVKh_v$。含 $J_0O_K,J_1O_K,J_0O_T,J_0O_KO_K$ 的 Dyson 时间有序插入，而不是随意新增 26 个算符。
+- **实际比较：** QCD 核精确重写为 $\bar u_u\Gamma^\mu[1+K_0/(M+\omega)][\omega+z/(M+\omega)]^{-1}P_+$；展开到 NNLP，其四个 HQET 项 $-J_2,J_1O_K,-J_0O_T,\frac12J_0O_KO_K$ 对应 $-K_0,-K_0z/\omega^2,+z/\omega,+z^2/\omega^3$，逐项之和与 QCD 相等。
+- **系数与范围：** 原始场局域流 Wilson 展开系数 $1,+1,-1$，拉氏量系数 $+1,-1$；时间有序项的乘法/Dyson 因子不是独立短程系数。在壳满足 $\omega=-z/M+O(M^{-3})$，单一自由在壳振幅不独立测出 $J_2$ 的 $-1$；无胶子不独立测出磁场强系数。真实硬光子衰变 NNLP 仍待做。
+- **完整导出：** [zero_gluon_QCD_HQET_tree_matching_2026-10-14.md](../docs/zero_gluon_QCD_HQET_tree_matching_2026-10-14.md)。历史讨论保留、当前条目是详细研究过程的补充而非替代。

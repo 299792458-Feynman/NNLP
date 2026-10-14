@@ -144,3 +144,24 @@ $$
 - **[局域接触项已写出；完整振幅待核验]** 二胶子 $A^2$ 来自 $(K^2/2-VK)/M^2$，需与 $1\leftrightarrow2$、所有迭代图与拉氏量图合并，方能称完整双胶子外态匹配。
 
 **不得提升的结论：** 单一重构核的纵向 Ward 差分检验，并不是独立的完整 QCD/HQET 零/一/二胶子 Green 函数比较，也不是实光子电磁 Ward 检验；$26+26$ 的独立算符系数、$m_u=0$ 秩、RPI/EOM 接触项及硬光子过程系数仍待完成。此前第 7–9 节的“候选/待核验”表述保留，不以本增量覆盖。
+
+
+---
+
+## 11. 2026-10-14 — 无胶子 NNLP 树级逐项匹配 [新增]
+
+完整的 QCD 在壳截肢振幅、带重夸克传播子的离壳 Green 核、HQET 单双 Dyson 插入、局域算符表和 Wilson 系数的定义边界见 **[无胶子 NNLP 树级匹配](zero_gluon_QCD_HQET_tree_matching_2026-10-14.md)**，非摘要代替。
+
+令 $M=2m_b$、$\omega=v\cdot k$、$K_0=\slashed k_\perp$、$z=k_\perp^2$。原始场的自由投影传播核精确满足
+$$
+\frac{M+\omega+K_0}{M\omega+\omega^2+z}
+=\left(1+\frac{K_0}{M+\omega}\right)
+\left(\omega+\frac z{M+\omega}\right)^{-1}.
+$$
+将两侧展开到 $1/M^2$，QCD 与 HQET 的 NNLP 动量核都是
+$$
+-K_0-\frac{K_0z}{\omega^2}+\frac z\omega+\frac{z^2}{\omega^3}.
+$$
+HQET 的四个来源依次为 $-J_2$、$i\int T\{J_1,O_K\}$、$-i\int T\{J_0,O_T\}$、$(i^2/2)\iint T\{J_0,O_K,O_K\}$。原始场局域流 $J_0,J_1,J_2$ 的树级系数（外提相应 $M$ 因子）为 $1,+1,-1$；拉氏量 $O_K,O_T$ 为 $+1,-1$；时间有序系数是 Dyson 组合因子，不是独立硬 Wilson 系数。
+
+**物理限制：** 在壳 $M\omega+\omega^2+z=0$ 令 $\omega=O(M^{-1})$，单一在壳无胶子振幅不能在 NNLP 独立测出 $J_2$ 的 $-1$；它来自固定场基底的小分量消元及离壳 Green 核。无胶子也不能独立检查磁场强结构。这里标记 **[无胶子解析匹配通过]**，不等同于背景软胶子、真实硬光子或全衰变 NNLP 匹配完成。
