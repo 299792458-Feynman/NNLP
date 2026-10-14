@@ -13,6 +13,7 @@
 | 路径 | 内容 |
 | --- | --- |
 | [`docs/HQET_expansion.md`](docs/HQET_expansion.md) | 重夸克场分解及 $1/m_b^2$ 展开 |
+| [`docs/HQET_heavy_light_operator_basis.md`](docs/HQET_heavy_light_operator_basis.md) | 二阶重轻流 26+26 系统母基、H1–H7 映射及尚未完成的无质量/过程级约化 |
 | [`docs/QCD_HQET_matching.md`](docs/QCD_HQET_matching.md) | 全理论/有效理论的匹配流程与 EOM 陷阱 |
 | [`docs/power_corrections.md`](docs/power_corrections.md) | NNLP 算符和时间有序插入清单 |
 | [`docs/form_factors.md`](docs/form_factors.md) | $F_V,F_A$ 的定义及提取 |
@@ -25,6 +26,8 @@
 ## 研究标准
 
 每个物理陈述区分：**[已推导并核验]、[形式推导/待核验]、[待计算]、[外部输入]**。讨论过的表达式不是自动成立的最终结果。写出算符基、场重定义、运动方程和归一化约定后，才允许比较匹配系数。
+
+已按 Balzereit–Ohl §2.1 整理 HQET 重轻流二阶 26 个局域算符和 26 个非局域时间有序乘积的**系统母基**。该数目不代表无质量 $u$ 夸克的最终极小基，也不等于含真实硬光子的完整 $B\to\gamma\ell\nu$ NNLP 过程基。
 
 ## 同步流程
 

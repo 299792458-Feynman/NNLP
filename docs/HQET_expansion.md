@@ -112,3 +112,9 @@ $$
 $[V,K]=ig_s\gamma_\perp^\rho v^\alpha G_{\alpha\rho}$。
 利用最低阶 EOM 改写时必须同时追踪场重定义、时间有序乘积及接触项。
 Darwin/spin-orbit 基是另一种约化表示，不可与原始 $O_T$ 重复相加。
+
+---
+
+## 6. 二阶流与系统母基的衔接（2026-10-14）
+
+**[文献输入/形式代数；过程专门化待核验]** 此处 $J_0,J_1,J_2$ 是未重定义 HQET 场的树级展开结果，而不是通用局域流 Wilson 系数全表。更一般的二阶重轻流系统母基包含 26 个维数 5 局域算符，以及必要的非局域时间有序乘积，详见 [`HQET_heavy_light_operator_basis.md`](HQET_heavy_light_operator_basis.md)。改变重夸克场定义和进行 EOM 约化时，需同时变换流、拉氏量及 $T$-积接触项。

@@ -18,6 +18,7 @@
 
 - C. Balzereit, T. Ohl, *Heavy Quark Effective Field Theory at $O(1/m_Q^2)$. I. QCD Corrections to the Lagrangian*, [arXiv:hep-ph/9604352](https://arxiv.org/abs/hep-ph/9604352)。用于与二阶 HQET 作用量/场重定义算符基比较；本项目尚未完成逐式匹配。
 - C. Balzereit, T. Ohl, *Heavy Quark Effective Field Theory at $O(1/m_Q^2)$. II. QCD Corrections to the Currents*, [arXiv:hep-ph/9612339](https://arxiv.org/abs/hep-ph/9612339)。用于核查高阶重轻流的独立算符基与 Wilson 系数；不能把本项目七类 Dyson 组合误认为其完整基。
+  - **原文重点核验：** §2.1，维数 3/4 流式 (3)、arrow identities 式 (4)、26 个局域二阶流式 (5)、非局域二阶 $T$-积式 (7)–(9)。原文的轻夸克是带质量的 $c$ 场；移用于无质量 $u$ 时需另做 EOM 约化。期刊：*Phys. Lett. B* **398** (1997) 365–373，[DOI:10.1016/S0370-2693(97)00241-4](https://doi.org/10.1016/S0370-2693(97)00241-4)。不表示本项目已复算所有 Wilson 系数。
 - M. Beneke, V. M. Braun, Y. Ji, Y.-B. Wei, *Radiative leptonic decay $B\to\gamma\ell\nu$ with subleading power corrections*, JHEP 07 (2018) 154, [DOI:10.1007/JHEP07(2018)154](https://doi.org/10.1007/JHEP07(2018)154)。提供 NLP 处理方法，并非全部 NNLP 结果。
 - B.-Y. Cui, Y.-L. Shen, C. Wang, Y.-B. Wei, *QCD factorization for the $B\to\gamma\ell\nu$ decay beyond leading power*, Eur. Phys. J. C 85 (2025) 1052, [DOI:10.1140/epjc/s10052-025-14772-z](https://doi.org/10.1140/epjc/s10052-025-14772-z)。**术语警告：** LP 的 NNLL 对数重求和与 NNLP 功率修正不是同一概念；文献中的次领先贡献不能作为完整 NNLP 系数直接引用。
 
